@@ -13,7 +13,7 @@ function getDayOfWeek(d = new Date()) {
 }
 
 async function loadData() {
-  const res = await fetch('/devotionals.json', { cache: 'no-store' });
+ const res = await fetch('devotionals.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('Failed to load data');
   return await res.json();
 }
