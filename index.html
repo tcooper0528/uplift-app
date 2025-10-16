@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faith & Hope Uplift</title>
+  <meta name="description" content="Daily NKJV devotional: verse, reflection, and one-line encouragement." />
+  <meta property="og:title" content="Faith & Hope Uplift — Today’s Devotional" />
+  <meta property="og:description" content="A verse, a short reflection, and a gentle encouragement — fresh each day." />
+  <meta property="og:image" content="/assets/og-default.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✝️</text></svg>">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Faith &amp; Hope Uplift</h1>
+    <nav class="nav">
+      <button id="btn-today" class="btn primary">Today</button>
+      <button id="btn-archive" class="btn">Archive</button>
+      <button id="btn-about" class="btn">About</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="today" class="panel active">
+      <div class="card" id="today-card">
+        <div class="tag" id="tag-week"></div>
+        <h2 id="title">Today’s Devotional</h2>
+        <p class="meta" id="meta"></p>
+
+        <blockquote class="verse">
+          <span id="verse-text">Loading…</span>
+          <cite id="verse-ref"></cite>
+        </blockquote>
+
+        <p class="reflection" id="reflection"></p>
+        <p class="encouragement" id="encouragement"></p>
+
+        <div class="actions">
+          <button id="share-btn" class="btn primary">Share</button>
+          <button id="copy-btn" class="btn">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="archive" class="panel">
+      <h2>Archive</h2>
+      <div class="grid" id="archive-grid"></div>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>Faith &amp; Hope Uplift is a simple devotional that shares Scripture (NKJV), a short reflection, and a one-line encouragement. Built for light and peace.</p>
+      <p class="small">Note: NKJV text is copyrighted. See LICENSE-NOTE.md for details.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Faith &amp; Hope Uplift</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
 
