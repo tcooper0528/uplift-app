@@ -1,1 +1,26 @@
-
+*{box-sizing:border-box}
+:root{--bg:#faf9f7;--fg:#1f2328;--muted:#6b7280;--card:#ffffff;--line:#e5e7eb;--accent:#4f46e5}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}
+.topbar{position:sticky;top:0;background:var(--bg);backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid var(--line);padding:14px 18px;display:flex;align-items:center;justify-content:space-between}
+.topbar h1{margin:0;font-size:20px}
+.nav .btn{margin-left:8px}
+.container{max-width:840px;margin:28px auto;padding:0 16px}
+.panel{display:none}
+.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:6px 10px;font-size:12px;margin-bottom:8px}
+h2{margin:8px 0 4px 0}
+.meta{margin:0 0 8px 0;color:var(--muted);font-size:14px}
+.verse{border-left:4px solid var(--accent);padding-left:14px;margin:12px 0;font-size:20px;line-height:1.5}
+.verse cite{display:block;margin-top:6px;color:var(--muted);font-style:normal;font-size:14px}
+.reflection{font-size:18px;line-height:1.6;margin-top:12px}
+.encouragement{font-size:16px;margin-top:10px;font-style:italic}
+.actions{margin-top:16px}
+.btn{appearance:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 14px;font-size:14px;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn:active{transform:translateY(1px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.tile h3{margin:0 0 4px 0;font-size:16px}
+.footer{border-top:1px solid var(--line);padding:18px;color:var(--muted);text-align:center;margin-top:40px}
+.small{color:var(--muted);font-size:14px}
