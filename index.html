@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Faith & Hope Uplift</title>
+  <meta name="description" content="Daily NKJV devotional: verse, reflection, and one-line encouragement." />
+  <meta property="og:title" content="Faith & Hope Uplift — Today’s Devotional" />
+  <meta property="og:description" content="A verse, a short reflection, and a gentle encouragement — fresh each day." />
+  <meta property="og:image" content="og-default.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✝️ Favicon -->
+  <link rel="icon" 
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Faith & Hope Uplift</h1>
+    <nav>
+      <button id="btn-today">Today</button>
+      <button id="btn-archive">Archive</button>
+      <button id="btn-about">About</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- TODAY PANEL -->
+    <section id="today" class="panel active">
+      <h2 id="tag-week">Today’s Devotional</h2>
+      <p id="meta"></p>
+      <div id="today-card" class="card">
+        <blockquote id="verse-text"></blockquote>
+        <p id="verse-ref" class="small"></p>
+        <p id="reflection"></p>
+        <p id="encouragement" class="highlight"></p>
+      </div>
+      <div class="buttons">
+        <button id="share-btn">Share</button>
+        <button id="copy-btn">Copy</button>
+      </div>
+    </section>
+
+    <!-- ARCHIVE PANEL -->
+    <section id="archive" class="panel">
+      <h2>Archive</h2>
+      <div id="archive-grid"></div>
+    </section>
+
+    <!-- ABOUT PANEL -->
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>
+        Faith & Hope Uplift is a simple devotional app that shares Scripture and reflections from the NKJV Bible.
+        Each day includes one verse, a short reflection, and a word of encouragement.
+      </p>
+      <p>Built to bring peace, hope, and joy wherever you are. 🌤️</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Faith & Hope Uplift</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
 
